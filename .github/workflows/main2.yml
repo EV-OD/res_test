@@ -5,6 +5,9 @@ on:
     branches:
       - main
 
+env:
+  GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
